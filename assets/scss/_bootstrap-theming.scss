@@ -3,7 +3,8 @@
 
 .navbar-inverse {
   background-color: $color-deep-dark;
-
+  margin-bottom: 0;
+  border-color: transparent;
   .navbar-nav {
     > li > a {
       transition: background-color 0.5s;
