@@ -7,7 +7,9 @@
 
 .header-logo {
   padding: 100px 0;
+
   text-align: center;
+
   background-color: $color-dark;
   background-image: url(../img/header-bg.jpg);
   background-position: center;
@@ -15,19 +17,28 @@
 
   &__title {
     display: block;
+
+    margin-right: -0.33em;
+
+    letter-spacing: 0.33em;
+
+    color: $color-accent;
+
     font-family: $font-header;
     font-size: 3.5rem;
-    letter-spacing: 0.33em;
-    margin-right: -0.33em;
-    color: $color-accent;
+
     @extend %text-shadow;
   }
 
   &__description {
     display: block;
-    font-size: 1.15rem;
+
     letter-spacing: 0.2em;
+
     color: $color-white;
+
+    font-size: 1.15rem;
+
     @extend %text-shadow;
   }
 }
