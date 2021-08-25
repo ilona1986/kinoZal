@@ -92,3 +92,12 @@
     border-radius: 0 0 4px 4px;
   }
 }
+
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
+.thumbnail {
+  transition: background-color 0.25s;
+}
