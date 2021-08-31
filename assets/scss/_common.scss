@@ -12,6 +12,25 @@ body {
   font-size: $font-size;
 }
 
+h1 {
+  font-family: $font-header;
+
+  @include xs {
+    margin: 0 0 1em 0;
+
+    font-size: 2rem;
+  }
+  @include xs-min {
+    margin: -$gap-md 0 1em 0;
+
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+}
+
 a {
   color: $color-primary;
 

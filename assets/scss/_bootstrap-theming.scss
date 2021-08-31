@@ -6,6 +6,7 @@
 
   border-color: transparent;
   background-color: $color-deep-dark;
+
   .navbar-nav {
     > li > a {
       transition: background-color 0.5s;
@@ -33,13 +34,15 @@
     }
   }
 }
+
 .navbar-header {
   text-align: center;
 }
+
 .navbar-toggle {
   float: none;
 
-  margin-right: 15px;
+  margin-right: 0;
 }
 
 .navbar-left {
@@ -52,6 +55,7 @@
     }
   }
 }
+
 .navbar-right {
   @include sm {
     margin-top: 0;
@@ -62,6 +66,7 @@
     }
   }
 }
+
 .panel {
   &-info {
     border: none;
@@ -96,8 +101,4 @@
 .input-lg,
 .input-group-lg > .form-control {
   font-size: 0.875rem;
-}
-
-.thumbnail {
-  transition: background-color 0.25s;
 }

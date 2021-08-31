@@ -3,4 +3,81 @@
 
 .main {
   margin-bottom: $gap-xl;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films {
+  position: relative;
+
+  overflow: hidden;
+
+  margin-bottom: $gap-xl;
+
+  &-title::after {
+    position: absolute;
+
+    width: 100%;
+
+    content: "";
+
+    border-bottom: 3px solid #f0ad4f;
+
+    @include xs {
+      margin: 1.7rem 0 0 15px;
+    }
+    @include xs-min {
+      margin: 2.55rem 0 0 15px;
+    }
+  }
+
+  &-row {
+    margin-right: -$gap-sm;
+    margin-bottom: -$gap;
+    margin-left: -$gap-sm;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
+
+    &:hover h3 {
+      color: $color-white;
+    }
+
+    &__image {
+      @include lg {
+        width: 100%;
+      }
+    }
+    &__title {
+      margin: 0;
+
+      text-align: center;
+
+      font-weight: bold;
+    }
+
+    &__thumbnail {
+      display: block;
+
+      margin-bottom: 0;
+
+      transition: background-color 0.25s;
+
+      border-radius: 4px;
+
+      &:hover {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+    }
+  }
 }

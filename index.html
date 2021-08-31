@@ -60,11 +60,222 @@
   <div class="container">
     <div class="row">
 
-      <div class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">MAIN</div>
+      <div class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+      
+        <section class="site-search panel panel-info hidden-lg hidden-md">
+          <div class="panel-heading">Поиск</div>
+          <div class="panel-body">
+            <form action="search">
+              <div class="input-group input-group-lg">
+                <input class="form-control" type="search" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </section>
 
-      <div class="sidebar-left col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
+        <section class="user-login panel panel-info hidden-lg hidden-md">
+          <div class="panel-heading">Пользователь</div>
+          <div class="panel-body">
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#user-login-main" aria-controls="user-login-main"
+                  role="tab" data-toggle="tab"><span class="glyphicon glyphicon-log-in"></span></a></li>
+              <li role="presentation"><a href="#user-registration-main" aria-controls="user-registration-main"
+                  role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user"></span></a></li>
+            </ul>
+            <div class="user-login__content tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-default btn-lg btn-block">Вход</button>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                <form action="registration">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+                  <button class="btn btn-default btn-lg btn-block">Вход</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="new-films">
+          <h1 class="new-films-title">Новые фильмы</h1>
+          
+          <div class="new-films-row row">
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1266931.jpg" alt="Стражи галактики">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Стражи галактики</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1289488.jpg" alt="Занесло">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Занесло</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1341151.jpg" alt="Из машины">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Из машины</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Выхода нет</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1393263.jpg" alt="Человек муравей">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Человек муравей</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="Люси">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Люси</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1401663.jpg" alt="Марсианин">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Марсианин</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1415999.jpg" alt="Дочь Бога">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Дочь Бога</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1423264.jpg" alt="Месть от Кутюр">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Месть от Кутюр</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1441076.jpg" alt="5ять">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">5ять</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1453229.jpg" alt="Люди Икс">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Люди Икс</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div>
+                <div class="new-films-item__thumbnail thumbnail">
+                  <a href="#">
+                    <img class="new-films-item__image" src="assets/img/films/1455536.jpg" alt="Иллюзия обмана 2">
+                    <div class="new-films-item__caption caption">
+                      <h3 class="new-films-item__title">Иллюзия обмана 2</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
 
-        <div class="vertical-slider panel panel-info">
+        <!-- <section></section> -->
+
+        <!-- <section></section> -->
+        
+        </div>
+
+        <div class="sidebar-left col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
+
+        <div class="vertical-slider panel panel-info visible-lg visible-md">
 
           <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
 
@@ -97,7 +308,7 @@
           </div>
         </div>
 
-        <div class="site-search panel panel-info">
+        <div class="site-search panel panel-info visible-lg visible-md">
           <div class="panel-heading">Поиск</div>
           <div class="panel-body">
             <form action="search">
@@ -113,7 +324,7 @@
           </div>
         </div>
 
-        <div class="user-login panel panel-info">
+        <div class="user-login panel panel-info visible-lg visible-md">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
             <ul class="user-login__tabs nav nav-tabs" role="tablist">
@@ -145,7 +356,7 @@
                   <div class="form-group">
                     <input class="form-control input-lg" type="email" placeholder="Email">
                   </div>
-                  <button class="btn btn-default btn-lg btn-block">Вход</button>
+                  <button class="btn btn-default btn-lg btn-block">Регистрация</button>
                 </form>
               </div>
             </div>
@@ -160,7 +371,7 @@
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
               </div>
               <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum, rem at omnis consequatur delectus quas dicta maxime aliquam doloremque.</a>
+                <a class="site-news-item__link" href="#">Мы запустили новый сервис - по поиску кино на нашем портале. </a>
               </div>
               <div class="site-news-item__date">5 августа 2021 </div>
             </div>
@@ -169,7 +380,7 @@
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
               </div>
               <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum, rem at omnis consequatur delectus quas dicta maxime aliquam doloremque.</a>
+                <a class="site-news-item__link" href="#">На сайте добавлен новый функционал по управлению аккаунтом и избранными фильмами к просмотру.</a>
               </div>
               <div class="site-news-item__date">7 августа 2021 </div>
             </div>
@@ -178,7 +389,7 @@
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
               </div>
               <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum, rem at omnis consequatur delectus quas dicta maxime aliquam doloremque.</a>
+                <a class="site-news-item__link" href="#">Скорость скачивания фильмов с нашего портала выше,чем в других источниках.</a>
               </div>
               <div class="site-news-item__date">9 августа 2021 </div>
             </div>
@@ -187,7 +398,7 @@
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
               </div>
               <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum, rem at omnis consequatur delectus quas dicta maxime aliquam doloremque.</a>
+                <a class="site-news-item__link" href="#">Оптимизирована производительность портала.</a>
               </div>
               <div class="site-news-item__date">10 августа 2021 </div>
             </div>
@@ -196,7 +407,7 @@
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="image">
               </div>
               <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laborum, rem at omnis consequatur delectus quas dicta maxime aliquam doloremque.</a>
+                <a class="site-news-item__link" href="#">Колличество пользователей многократно возросло за прошедшие пол года по сравнению с предидущим периодом.</a>
               </div>
               <div class="site-news-item__date">12 августа 2021 </div>
             </div>
@@ -207,49 +418,49 @@
           <div class="panel-heading">Рейтинг фильмов</div>
           <div class="top-films__body panel-body">
             <div class="top-films__list list-group">
-              <a class="top-films__item list-group-item" href="#">Cras justo odio
+              <a class="top-films__item list-group-item" href="#">Охотники на ведьм
                 <span class="top-films__badge badge">9.7</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Dapibus ac facilisis in
+              <a class="top-films__item list-group-item" href="#">Обитель зла 5
                 <span class="top-films__badge badge">9.1</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Morbi leo risus
+              <a class="top-films__item list-group-item" href="#">Соблазн
                 <span class="top-films__badge badge">6.7</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Porta ac consectetur ac
+              <a class="top-films__item list-group-item" href="#">Терминатор 5
                 <span class="top-films__badge badge">8.5</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Vestibulum at eros
+              <a class="top-films__item list-group-item" href="#">Титаник
                 <span class="top-films__badge badge">7.4</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Cras justo odio
+              <a class="top-films__item list-group-item" href="#">Золушка
                 <span class="top-films__badge badge">9.7</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Dapibus ac facilisis in
+              <a class="top-films__item list-group-item" href="#">Вечера на хуторе близ Диканьки
                 <span class="top-films__badge badge">9.1</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Morbi leo risus
+              <a class="top-films__item list-group-item" href="#">Король лев
                 <span class="top-films__badge badge">6.7</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Porta ac consectetur ac
+              <a class="top-films__item list-group-item" href="#">Красная шапочка
                 <span class="top-films__badge badge">8.5</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Vestibulum at eros
+              <a class="top-films__item list-group-item" href="#">Мюнхаузен
                 <span class="top-films__badge badge">7.4</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Cras justo odio
+              <a class="top-films__item list-group-item" href="#">Ну, погоди!
                 <span class="top-films__badge badge">9.7</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Dapibus ac facilisis in
+              <a class="top-films__item list-group-item" href="#">Дракула
                 <span class="top-films__badge badge">9.1</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Morbi leo risus
+              <a class="top-films__item list-group-item" href="#">Тупой и еще тупее
                 <span class="top-films__badge badge">6.7</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Porta ac consectetur ac
+              <a class="top-films__item list-group-item" href="#">Дикий Ангел
                 <span class="top-films__badge badge">8.5</span>
               </a>
-              <a class="top-films__item list-group-item" href="#">Vestibulum at eros
+              <a class="top-films__item list-group-item" href="#">Санта Барбара.
                 <span class="top-films__badge badge">7.4</span>
               </a>
             </div>
