@@ -102,3 +102,9 @@
 .input-group-lg > .form-control {
   font-size: 0.875rem;
 }
+
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 0;
+}

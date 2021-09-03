@@ -3,11 +3,12 @@
 
 html {
   overflow-y: scroll;
-
+  overflow: visible;
   font-size: $font-size;
 }
 
 body {
+  overflow-x: hidden;
   font-family: $font-main;
   font-size: $font-size;
 }

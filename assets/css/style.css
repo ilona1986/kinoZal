@@ -60,12 +60,20 @@
   font-size: 0.875rem;
 }
 
+.embed-responsive {
+  border: 1px solid #d5d5d5;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 0;
+}
+
 html {
   overflow-y: scroll;
+  overflow: visible;
   font-size: 16px;
 }
 
 body {
+  overflow-x: hidden;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
 }
@@ -123,14 +131,14 @@ a:hover, a:focus {
 }
 
 .new-films {
-  margin-bottom: 80px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 80px;
 }
 .new-films-title::after {
   position: absolute;
-  content: "";
   width: 100%;
+  content: "";
   border-bottom: 3px solid #f0ad4f;
 }
 .new-films-row {
@@ -152,16 +160,44 @@ a:hover, a:focus {
   font-weight: bold;
 }
 .new-films-item__thumbnail {
-  margin-bottom: 0;
   display: block;
-  border-radius: 4px;
+  margin-bottom: 0;
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  border-radius: 4px;
 }
 .new-films-item__thumbnail:hover {
   border-color: #df8a13;
   background-color: #df8a13;
+}
+
+.film-about {
+  position: relative;
+  overflow: hidden;
+}
+.film-about__title::after {
+  position: absolute;
+  margin-left: 15px;
+  width: 100%;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+.film-about__well {
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+}
+.film-about__content {
+  font-size: 1.2rem;
+}
+.film-about__content:first-of-type {
+  margin-left: 12px;
+}
+.film-about__content:not(last-of-type) {
+  margin-right: 15px;
+}
+.film-about__badge {
+  font-size: 0.8em;
 }
 
 .sidebar-left {
@@ -294,6 +330,9 @@ a:hover, a:focus {
   .new-films-title::after {
     margin: 2.55rem 0 0 15px;
   }
+  .film-about__title::after {
+    padding-top: 41px;
+  }
 }
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a {
@@ -324,13 +363,16 @@ a:hover, a:focus {
 }
 @media (max-width: 575.8px) {
   h1 {
-    font-size: 2rem;
     margin: 0 0 1em 0;
+    font-size: 2rem;
   }
   .header-logo__title {
     font-size: 2.5rem;
   }
   .new-films-title::after {
     margin: 1.7rem 0 0 15px;
+  }
+  .film-about__title::after {
+    padding-top: 27px;
   }
 }
