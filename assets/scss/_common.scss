@@ -28,6 +28,30 @@ h1 {
   }
 }
 
+h2 {
+  font-family: $font-header;
+  font-size: 2.5rem;
+  padding-top: 59px;
+  margin: 0 0 45px 45px;
+  position: relative;
+
+  &::before {
+    margin: 10px 0 0 -45px;
+    position: absolute;
+    content:"";
+    width: $gap*2;
+    border-bottom: 3px solid #f0ad4f;
+  }
+
+  &::after {
+    margin: 34px 0 0 15px;
+    position: absolute;
+    content:"";
+    width: 100%;
+    border-bottom: 3px solid #f0ad4f; 
+  }
+}
+
 h3 {
   font-size: 1rem;
 }

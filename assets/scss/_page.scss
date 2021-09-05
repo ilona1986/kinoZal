@@ -30,7 +30,7 @@
   }
 
   &__content:first-of-type {
-    margin-left: 12px;
+    margin-left: 15px;
   }
   &__content:not(last-of-type) {
     margin-right: 15px;
@@ -39,4 +39,14 @@
   &__badge {
     font-size: 0.8em;
   }
+}
+
+.film-form,
+.film-comments,
+.film-content {
+  overflow: hidden;
+}
+
+.film-form__button {
+  float: right;
 }
