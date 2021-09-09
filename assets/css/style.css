@@ -108,12 +108,8 @@ h3 {
   font-size: 1rem;
 }
 
-a {
-  color: #165690;
-}
-a:hover, a:focus {
-  text-decoration: none;
-  color: #df8a13;
+h4 {
+  font-size: 1.125rem;
 }
 
 .header {
@@ -350,6 +346,40 @@ a:hover, a:focus {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+a {
+  color: #165690;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #df8a13;
+}
+
+.footer {
+  background-color: #232323;
+  color: #d5d5d5;
+  padding-top: 45px;
+}
+.footer a {
+  color: #6f6f6f;
+}
+.footer a:hover, .footer a:focus {
+  color: #ffffff;
+}
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+}
+.footer-fifth a {
+  color: #d5d5d5;
+}
+.footer-fifth a:hover, .footer-fifth a:focus {
+  color: #ffffff;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
 }
 @media (min-width: 576px) {
   h1 {

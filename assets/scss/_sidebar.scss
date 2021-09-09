@@ -148,3 +148,13 @@ $image-size-with-padding: $image-size + $gap-md;
     transform: translateY(-50%);
   }
 }
+a {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    color: $color-accent;
+  }
+}

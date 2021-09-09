@@ -56,13 +56,8 @@ h3 {
   font-size: 1rem;
 }
 
-a {
-  color: $color-primary;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
 
-    color: $color-accent;
-  }
+h4 {
+  font-size: 1.125rem;
 }
