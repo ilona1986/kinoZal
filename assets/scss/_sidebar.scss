@@ -90,6 +90,7 @@ $image-size-with-padding: $image-size + $gap-md;
 
   &__link {
     transition: 0.25s;
+
     color: $color-primary;
 
     &:hover,

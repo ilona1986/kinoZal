@@ -18,7 +18,6 @@
 
   overflow: hidden;
 
-  
   &-title::after {
     position: absolute;
 
@@ -137,6 +136,62 @@
       & a:focus {
         text-decoration: none;
       }
+    }
+  }
+}
+
+.news-cinema {
+  position: relative;
+
+  overflow: hidden;
+
+  &-item {
+    h3 > a {
+      transition: 0.3s;
+      text-decoration: none;
+
+      color: $color-primary;
+
+      @include xs-min {
+        font-size: 1.5rem;
+      }
+      @include xs {
+        font-size: 1.25rem;
+      }
+    }
+
+    &:hover {
+      .thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+
+      .btn-warning {
+        background-color: $color-accent;
+      }
+
+      h3 > a {
+        color: $color-accent;
+      }
+    }
+
+    &__thumbnail {
+      margin: 0;
+
+      transition: 0.3s;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+
+      margin-bottom: 30px;
+
+      transition: 0.3s;
+      text-decoration: none;
     }
   }
 }

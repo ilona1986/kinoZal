@@ -226,6 +226,45 @@ h4 {
   text-decoration: none;
 }
 
+.news-cinema {
+  overflow: hidden;
+  position: relative;
+}
+.news-cinema-item h3 > a {
+  text-decoration: none;
+  color: #165690;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.news-cinema-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.news-cinema-item:hover .btn-warning {
+  background-color: #df8a13;
+}
+.news-cinema-item:hover h3 > a {
+  color: #df8a13;
+}
+.news-cinema-item__thumbnail {
+  margin: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.news-cinema-item__text {
+  text-align: justify;
+}
+.news-cinema-item__button {
+  float: right;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
 .film-about {
   position: relative;
   overflow: hidden;
@@ -435,6 +474,9 @@ h4 {
   .new-films-title::after {
     margin: 2.55rem 0 0 15px;
   }
+  .news-cinema-item h3 > a {
+    font-size: 1.5rem;
+  }
   .film-about__title::after {
     padding-top: 41px;
   }
@@ -490,6 +532,9 @@ h4 {
   }
   .new-films-title::after {
     margin: 1.7rem 0 0 15px;
+  }
+  .news-cinema-item h3 > a {
+    font-size: 1.25rem;
   }
   .film-about__title::after {
     padding-top: 27px;

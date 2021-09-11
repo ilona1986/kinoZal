@@ -3,25 +3,29 @@
 
 .film-about {
   position: relative;
+
   overflow: hidden;
 
   &__title::after {
     position: absolute;
-    margin-left: 15px;
+
     width: 100%;
+    margin-left: 15px;
+
     content: "";
+
     border-bottom: 3px solid #f0ad4f;
 
     @include xs-min {
       padding-top: 41px;
     }
-
     @include xs {
       padding-top: 27px;
     }
   }
   &__well {
     text-align: center;
+
     border-radius: 0 0 4px 4px;
   }
 

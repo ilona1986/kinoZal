@@ -2,13 +2,15 @@
 @use "mixins" as *;
 
 html {
-  overflow-y: scroll;
   overflow: visible;
+  overflow-y: scroll;
+
   font-size: $font-size;
 }
 
 body {
   overflow-x: hidden;
+
   font-family: $font-main;
   font-size: $font-size;
 }
@@ -29,22 +31,38 @@ h1 {
 }
 
 h2 {
-  font-family: $font-header;
+  position: relative;
   // font-size: 2.5rem;
   // padding-top: 59px;
+
   margin: 0 0 45px 45px;
-  position: relative;
+
+  font-family: $font-header;
+
+  @include xs-min {
+    padding-top: 59px;
+
+    font-size: 2.5rem;
+  }
+  @include xs {
+    margin-bottom: 30px;
+    padding-top: 45px;
+
+    font-size: 1.75rem;
+  }
 
   &::before {
     position: absolute;
-    content: "";
+
     width: $gap * 2;
+
+    content: "";
+
     border-bottom: 3px solid #f0ad4f;
 
     @include xs-min {
       margin: 10px 0 0 -45px;
     }
-
     @include xs {
       margin: 7px 0 0 -45px;
     }
@@ -52,28 +70,19 @@ h2 {
 
   &::after {
     position: absolute;
-    content: "";
+
     width: 100%;
+
+    content: "";
+
     border-bottom: 3px solid #f0ad4f;
 
     @include xs-min {
       margin: 34px 0 0 15px;
     }
-
     @include xs {
       margin: 24px 0 0 15px;
     }
-  }
-
-  @include xs-min {
-    font-size: 2.5rem;
-    padding-top: 59px;
-  }
-
-  @include xs {
-    font-size: 1.75rem;
-    padding-top: 45px;
-    margin-bottom: 30px;
   }
 }
 
