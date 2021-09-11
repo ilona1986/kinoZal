@@ -90,6 +90,12 @@ $image-size-with-padding: $image-size + $gap-md;
 
   &__link {
     transition: 0.25s;
+    color: $color-primary;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 
   &__date {
@@ -146,15 +152,5 @@ $image-size-with-padding: $image-size + $gap-md;
     right: $gap;
 
     transform: translateY(-50%);
-  }
-}
-a {
-  color: $color-primary;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-
-    color: $color-accent;
   }
 }

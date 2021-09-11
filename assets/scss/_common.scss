@@ -30,33 +30,56 @@ h1 {
 
 h2 {
   font-family: $font-header;
-  font-size: 2.5rem;
-  padding-top: 59px;
+  // font-size: 2.5rem;
+  // padding-top: 59px;
   margin: 0 0 45px 45px;
   position: relative;
 
   &::before {
-    margin: 10px 0 0 -45px;
     position: absolute;
-    content:"";
-    width: $gap*2;
+    content: "";
+    width: $gap * 2;
     border-bottom: 3px solid #f0ad4f;
+
+    @include xs-min {
+      margin: 10px 0 0 -45px;
+    }
+
+    @include xs {
+      margin: 7px 0 0 -45px;
+    }
   }
 
   &::after {
-    margin: 34px 0 0 15px;
     position: absolute;
-    content:"";
+    content: "";
     width: 100%;
-    border-bottom: 3px solid #f0ad4f; 
+    border-bottom: 3px solid #f0ad4f;
+
+    @include xs-min {
+      margin: 34px 0 0 15px;
+    }
+
+    @include xs {
+      margin: 24px 0 0 15px;
+    }
+  }
+
+  @include xs-min {
+    font-size: 2.5rem;
+    padding-top: 59px;
+  }
+
+  @include xs {
+    font-size: 1.75rem;
+    padding-top: 45px;
+    margin-bottom: 30px;
   }
 }
 
 h3 {
   font-size: 1rem;
 }
-
-
 
 h4 {
   font-size: 1.125rem;
