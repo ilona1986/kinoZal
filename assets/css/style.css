@@ -62,13 +62,13 @@
 
 .embed-responsive {
   border: 1px solid #d5d5d5;
-  border-radius: 4px 4px 0 0;
   border-bottom: 0;
+  border-radius: 4px 4px 0 0;
 }
 
 html {
-  overflow-y: scroll;
   overflow: visible;
+  overflow-y: scroll;
   font-size: 16px;
 }
 
@@ -83,20 +83,20 @@ h1 {
 }
 
 h2 {
-  font-family: "PT Serif", serif;
-  margin: 0 0 45px 45px;
   position: relative;
+  margin: 0 0 45px 45px;
+  font-family: "PT Serif", serif;
 }
 h2::before {
   position: absolute;
-  content: "";
   width: 30px;
+  content: "";
   border-bottom: 3px solid #f0ad4f;
 }
 h2::after {
   position: absolute;
-  content: "";
   width: 100%;
+  content: "";
   border-bottom: 3px solid #f0ad4f;
 }
 
@@ -227,15 +227,15 @@ h4 {
 }
 
 .news-cinema {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .news-cinema-item h3 > a {
-  text-decoration: none;
-  color: #165690;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  text-decoration: none;
+  color: #165690;
 }
 .news-cinema-item:hover .thumbnail {
   border-color: #df8a13;
@@ -258,11 +258,11 @@ h4 {
 }
 .news-cinema-item__button {
   float: right;
-  text-decoration: none;
+  margin-bottom: 30px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .film-about {
@@ -271,8 +271,8 @@ h4 {
 }
 .film-about__title::after {
   position: absolute;
-  margin-left: 15px;
   width: 100%;
+  margin-left: 15px;
   content: "";
   border-bottom: 3px solid #f0ad4f;
 }
@@ -428,16 +428,16 @@ h4 {
 }
 
 .footer {
-  background-color: #232323;
-  color: #d5d5d5;
   padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
 }
 .footer a {
   color: #6f6f6f;
 }
 .footer a:hover, .footer a:focus {
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
 }
 .footer-fifth {
   margin: 20px 0;
@@ -450,23 +450,23 @@ h4 {
   color: #ffffff;
 }
 .footer ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 @media (min-width: 576px) {
   h1 {
     margin: -10px 0 1em 0;
     font-size: 3rem;
   }
+  h2 {
+    padding-top: 60px;
+    font-size: 2.5rem;
+  }
   h2::before {
     margin: 10px 0 0 -45px;
   }
   h2::after {
     margin: 34px 0 0 15px;
-  }
-  h2 {
-    font-size: 2.5rem;
-    padding-top: 59px;
   }
   .header-logo__title {
     font-size: 3.5rem;
@@ -516,16 +516,16 @@ h4 {
     margin: 0 0 1em 0;
     font-size: 2rem;
   }
+  h2 {
+    margin-bottom: 30px;
+    padding-top: 45px;
+    font-size: 1.75rem;
+  }
   h2::before {
     margin: 7px 0 0 -45px;
   }
   h2::after {
     margin: 24px 0 0 15px;
-  }
-  h2 {
-    font-size: 1.75rem;
-    padding-top: 45px;
-    margin-bottom: 30px;
   }
   .header-logo__title {
     font-size: 2.5rem;
