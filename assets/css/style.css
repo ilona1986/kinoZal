@@ -403,6 +403,7 @@ h4 {
   background-color: transparent;
 }
 .top-films__item:first-child {
+  border-top: none;
   border-bottom: none;
   border-radius: 0;
 }
