@@ -127,9 +127,10 @@ $image-size-with-padding: $image-size + $gap-md;
     background-color: transparent;
 
     &:first-child {
-      border-top: none;
+      border-top: 1px solid $color-gray-light; //none
       border-bottom: none;
       border-radius: 0;
+      bottom: 1px;
     }
 
     &:last-child {
