@@ -168,8 +168,13 @@ h4 {
   color: #ffffff;
 }
 .new-films-item__title {
+  display: block;
+  overflow: hidden;
   margin: 0;
-  text-align: center;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 1rem;
   font-weight: bold;
 }
 .new-films-item__thumbnail {
@@ -206,8 +211,13 @@ h4 {
   color: #ffffff;
 }
 .top-week-item__title {
+  display: block;
+  overflow: hidden;
   margin: 0;
-  text-align: center;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 1rem;
   font-weight: bold;
 }
 .top-week-item__thumbnail {
